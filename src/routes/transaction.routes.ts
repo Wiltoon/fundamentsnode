@@ -13,8 +13,6 @@ transactionRouter.get('/', (request, response) => {
     const transactions = transactionsRepository.all();
     const balance = transactionsRepository.getBalance();
 
-
-
     return response.status(200).json({
       transactions,
       balance
